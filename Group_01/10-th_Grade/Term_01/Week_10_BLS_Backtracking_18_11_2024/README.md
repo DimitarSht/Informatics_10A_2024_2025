@@ -1,3 +1,5 @@
 # Какво правихме в час?
 - Представихме алгоритмите за търсене Linear Search, Binary Search, Skip Search - [Примерни имплементации тук](https://github.com/DimitarSht/Informatics_10A_2024_2025/tree/main/Group_01/10-th_Grade/Term_01/Week_10_BLS_Backtracking_18_11_2024/Solutions/SearchingAlgorithms)
-- Представихме метода Търсене с връщане назад - [Примерни имплементации на проблеми, решими с backtracking](https://github.com/DimitarSht/Informatics_10A_2024_2025/tree/main/Group_01/10-th_Grade/Term_01/Week_10_BLS_Backtracking_18_11_2024/Solutions/Backtracking)
+- [Задачи](https://github.com/DimitarSht/Informatics_10A_2024_2025/blob/main/Group_01/10-th_Grade/Term_01/Week_10_BLS_Backtracking_18_11_2024/Tasks/searching_exercise.pdf) върху алгоритмите за търсене
+
+- Представихме метода Търсене с връщане назад - Примерни имплементации на [проблеми](https://github.com/DimitarSht/Informatics_10A_2024_2025/blob/main/Group_01/10-th_Grade/Term_01/Week_10_BLS_Backtracking_18_11_2024/Tasks/backtracking_exercise.pdf), решими с [backtracking](https://github.com/DimitarSht/Informatics_10A_2024_2025/tree/main/Group_01/10-th_Grade/Term_01/Week_10_BLS_Backtracking_18_11_2024/Solutions/Backtracking)
