@@ -1,0 +1,2 @@
+# Какво правихме в час?
+- Представихме метода за сортиране Merge Sort -> [имплементация тук](ttps://github.com/DimitarSht/Informatics_10A_2024_2025/blob/main/Group_01/10-th_Grade/Term_01/Week_12_Merge_Sort_02_12_2024)
