@@ -6,32 +6,51 @@ int* findmid(int* arr, int sz, int target){
     }
     return nullptr;
 }
-void swap(int* one, int* two){
-    int* temp = one;
-    one = two;
-    two = temp;
-}
-int* fc(int* nachalo, int sz, int* kraj, int* mid){
-    int* temp = new int[sz];
-    for(int i = 0; i < sz - 1; i++){
-        temp[i] = mid + i;
+
+void print(int *begin, int *end)
+{
+    while (begin < end)
+    {
+        cout << *begin << " ";
+        begin++;
     }
-    for(int i = mid, i < sz; i++){
-        temp[i] = nachalo + i;
-    }
-    return temp;
 }
+
+void reverse(int *begin, int *end) {
+  while (begin < end - 1) {
+    std::iter_swap(begin, end - 1);
+    ++begin;
+    --end;
+  }
+}
+
+void rotate(int *begin, int *mid, int *end) {
+  reverse(begin, mid);
+  reverse(mid, end);
+  reverse(begin, end);
+}
+
 int main(){
 
     int sz;
     cin>>sz;
     int* arr = new int[sz];
-    for(int i = 0; i < sz; i++){
+    for(int i = 0; i < sz; i++)
+    {
         cin>>arr[i];
     }
-    int mid;
-    cin>>mid;
-    int* temp = findmid(arr, sz, mid);
+    
+    int midIdx;
+    cin>>midIdx;
+    int* mid = arr + midIdx;
+
+    rotate(arr, mid, arr + sz);
+    print(arr, arr + sz);
+    
+
+
+
+    delete[] arr;
 
 
 
