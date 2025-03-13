@@ -1,0 +1,6 @@
+5
+Orange 10 2.34
+Lemon 50 1.23
+Carrot 20 3.42
+Apple 30 1.50
+Tomato 0 3.0

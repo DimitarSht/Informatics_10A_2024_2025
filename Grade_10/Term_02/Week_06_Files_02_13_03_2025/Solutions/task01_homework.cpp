@@ -1,0 +1,77 @@
+#include<iostream>
+#include<fstream>
+using namespace std;
+
+void func(const string& filename)
+{
+    ifstream in(filename);
+    ofstream out("copy.txt");
+    if(!in.is_open())
+    {
+        cout<<"Error";
+        return;
+    }
+    if(!out.is_open()) {cout<<"Error"; return;}
+    string line;
+    while(!in.eof())
+    {
+        getline(in, line);
+        out<<line<<endl;
+    }
+    in.close();
+    out.close();
+//    while(getline(in, line))
+//    {
+//        cout<<line<<endl;
+//    }
+}
+
+void file_size(const string& filename)
+{
+    int file_size = 0;
+    ifstream in(filename);
+    if(!in.is_open())
+    {
+        cout<<"Error";
+        return;
+    }
+    string line;
+    while(!in.eof())
+    {
+        getline(in, line);
+        file_size += line.size();
+//        file_size += line.length();
+    }
+    in.close();
+    cout<<file_size;
+//    while(getline(in, line))
+//    {
+//        cout<<line<<endl;
+//    }
+}
+void func2(ifstream &in)
+{
+    string line;
+    while(!in.eof())
+    {
+        getline(in, line);
+        cout<<line<<endl;
+    }
+}
+
+
+int main()
+{
+//    ifstream file("task01_homework.cpp");
+//    if(!file.is_open()) cout<<"Error!";
+//    func2(file);
+//    file.close();
+
+//    func("task01_homework.cpp");
+
+    file_size("task01_homework.cpp");
+
+    ;
+    return 0;
+}
+
