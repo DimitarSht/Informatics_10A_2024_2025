@@ -1,0 +1,4 @@
+Ivan Ivanov 10 5.5
+Aleks Aleksandrov 10 4.5
+Georgi Georgiev 10 6
+Average is: 5.33333
